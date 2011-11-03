@@ -1,3 +1,9 @@
+# revision 20987
+# category Package
+# catalog-ctan /language/bengali/pandey
+# catalog-date 2011-01-08 01:32:58 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-bengali
 Version:	20110108
 Release:	1
@@ -68,6 +74,7 @@ Devanagari. The package also supports Assamese.
 %doc %{_texmfdistdir}/doc/fonts/bengali/manifest.txt
 #- source
 %doc %{_texmfdistdir}/source/latex/bengali/beng.c
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -78,3 +85,5 @@ Devanagari. The package also supports Assamese.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
