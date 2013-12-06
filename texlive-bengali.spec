@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-bengali
 Version:	20110108
-Release:	5
+Release:	6
 Summary:	Support for the Bengali language
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/bengali/pandey
