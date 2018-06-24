@@ -5,7 +5,7 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-bengali
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Support for the Bengali language
 Group:		Publishing
