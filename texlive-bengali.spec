@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-bengali
-Version:	20180303
-Release:	3
+Version:	20190228
+Release:	1
 Summary:	Support for the Bengali language
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/bengali/pandey
