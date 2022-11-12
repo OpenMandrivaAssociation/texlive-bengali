@@ -5,9 +5,9 @@ Summary:	Support for the Bengali language
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/bengali/pandey
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bengali.r55475.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bengali.doc.r55475.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bengali.source.r55475.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bengali.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bengali.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bengali.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
