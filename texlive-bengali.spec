@@ -1,19 +1,13 @@
-# revision 20987
-# category Package
-# catalog-ctan /language/bengali/pandey
-# catalog-date 2011-01-08 01:32:58 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-bengali
-Version:	20190228
+Version:	55475
 Release:	1
 Summary:	Support for the Bengali language
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/bengali/pandey
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bengali.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bengali.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bengali.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bengali.r55475.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bengali.doc.r55475.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bengali.source.r55475.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ extensions to deal with the Bengali letters that are not in
 Devanagari. The package also supports Assamese.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -68,25 +62,11 @@ Devanagari. The package also supports Assamese.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110108-2
-+ Revision: 749565
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110108-1
-+ Revision: 717906
-- texlive-bengali
-- texlive-bengali
-- texlive-bengali
-- texlive-bengali
-- texlive-bengali
-
