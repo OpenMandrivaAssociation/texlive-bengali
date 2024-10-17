@@ -3,7 +3,7 @@ Version:	55475
 Release:	2
 Summary:	Support for the Bengali language
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/language/bengali/pandey
+URL:		https://www.ctan.org/tex-archive/language/bengali/pandey
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bengali.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bengali.doc.r%{version}.tar.xz
